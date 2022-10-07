@@ -25,3 +25,5 @@ yarn-error.log*
 # rust
 /ironcc-wasm/target
 /ironcc-wasm/pkg
+
+/.env
