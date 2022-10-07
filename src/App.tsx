@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
+import init, { add } from "ironcc-wasm";
 import './App.css';
 
 function App() {
+  useEffect(() => { init().then(() => alert("wasm is ready!")) }, [])
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +20,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={() => console.log(add(1, 2))} >Click to alert</button>
       </header>
     </div>
   );
