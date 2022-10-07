@@ -1,0 +1,24 @@
+.compile-form {
+    display: flex
+}
+
+.compile-input-form {
+    width: 80%;
+}
+
+.c-input {
+    height: 80vh;
+    width: 80%;
+    text-align: initial;
+    justify-content: left;
+}
+
+.compile-output {
+    text-align: left;
+    font-size: 10%;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    color: black;
+    margin-left: auto;
+}

@@ -15,9 +15,15 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 
 [[package]]
+name = "ironcc"
+version = "0.1.0"
+source = "git+https://github.com/lemolatoon/ironcc.git?branch=develop#e9a67a465c823470a36d223170815d22cc59338a"
+
+[[package]]
 name = "ironcc-wasm"
 version = "0.1.0"
 dependencies = [
+ "ironcc",
  "wasm-bindgen",
 ]
 
