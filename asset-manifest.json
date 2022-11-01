@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/IronccWeb/static/css/main.1af1f27d.css",
-    "main.js": "/IronccWeb/static/js/main.8a242f44.js",
+    "main.css": "/IronccWeb/static/css/main.d6a04d64.css",
+    "main.js": "/IronccWeb/static/js/main.718174e6.js",
     "static/js/787.0d80c99b.chunk.js": "/IronccWeb/static/js/787.0d80c99b.chunk.js",
-    "static/media/ironcc_wasm_bg.wasm": "/IronccWeb/static/media/ironcc_wasm_bg.2f5a3ec636e921065e43.wasm",
+    "static/media/ironcc_wasm_bg.wasm": "/IronccWeb/static/media/ironcc_wasm_bg.877a651c7ef5fe947de7.wasm",
     "index.html": "/IronccWeb/index.html",
-    "main.1af1f27d.css.map": "/IronccWeb/static/css/main.1af1f27d.css.map",
-    "main.8a242f44.js.map": "/IronccWeb/static/js/main.8a242f44.js.map",
+    "main.d6a04d64.css.map": "/IronccWeb/static/css/main.d6a04d64.css.map",
+    "main.718174e6.js.map": "/IronccWeb/static/js/main.718174e6.js.map",
     "787.0d80c99b.chunk.js.map": "/IronccWeb/static/js/787.0d80c99b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1af1f27d.css",
-    "static/js/main.8a242f44.js"
+    "static/css/main.d6a04d64.css",
+    "static/js/main.718174e6.js"
   ]
 }
