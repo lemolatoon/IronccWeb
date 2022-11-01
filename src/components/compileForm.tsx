@@ -6,7 +6,7 @@ import { useState } from "react";
 const CompileForm = () => {
     const [src, setSrc] = useState<string | null>(null);
     const [asm, setAsm] = useState<string>("asm");
-    const asm_splited = asm.split("\n").map((item, index) => {
+    const asm_splited = asm.replaceAll(" ", '\u00A0').split("\n").map((item, index) => {
         return (
             <React.Fragment key={index}>{item}<br /></React.Fragment>
         );

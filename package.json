@@ -22,8 +22,8 @@
     "predeploy": "npm run rsbuild && npm run build",
     "deploy": "gh-pages -d build",
     "start": "npm run rsbuild && react-scripts start",
-    "rsbuild": "cd ironcc-wasm && wasm-pack build --target web --dev",
-    "build": "react-scripts build",
+    "rsbuild": "cd ironcc-wasm && wasm-pack build --target web",
+    "build": "npm run rsbuild && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

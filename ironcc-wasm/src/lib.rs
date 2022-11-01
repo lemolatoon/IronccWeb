@@ -14,5 +14,5 @@ pub fn add(a: i32, b: i32) -> i32 {
 
 #[wasm_bindgen]
 pub fn preprocess_and_compile(input: String) -> String {
-    crate::ironcc::preprocess_and_compile(input).unwrap_or("compilation failed.".to_string())
+    crate::ironcc::preprocess_and_compile(input).map_or_else(|e| format!("{:?}", e), |s| s)
 }
