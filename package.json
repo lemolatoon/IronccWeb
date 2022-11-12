@@ -11,6 +11,7 @@
     "@types/node": "^16.11.64",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "eslint": "^8.27.0",
     "ironcc-wasm": "file:ironcc-wasm/pkg",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -20,12 +21,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "prepare": "husky install",
     "predeploy": "npm run rsbuild && npm run build",
     "deploy": "gh-pages -d build",
     "start": "npm run rsbuild && react-scripts start",
     "rsbuild": "cd ironcc-wasm && wasm-pack build --target web",
     "build": "npm run rsbuild && react-scripts build",
     "fmt": "npx prettier --write .",
+    "lint": "npx eslint .",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -49,6 +52,21 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.26",
-    "gh-pages": "^4.0.0"
+    "eslint-config-prettier": "^8.5.0",
+    "gh-pages": "^4.0.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "npx prettier --write",
+      "npx eslint --fix"
+    ],
+    "*.{json,yml,html,css,scss}": "npx prettier --write"
   }
 }

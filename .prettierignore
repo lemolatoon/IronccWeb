@@ -1,0 +1,4 @@
+/node_modules
+/ironcc-wasm
+/build
+*.md

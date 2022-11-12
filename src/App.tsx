@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import logo from "./logo.svg";
 import init from "ironcc-wasm";
 import CompileForm from "./components/compileForm";
 import "./App.css";
