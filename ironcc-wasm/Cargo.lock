@@ -17,7 +17,7 @@ checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
 [[package]]
 name = "ironcc"
 version = "0.1.0"
-source = "git+https://github.com/lemolatoon/ironcc.git?branch=develop#e9a67a465c823470a36d223170815d22cc59338a"
+source = "git+https://github.com/lemolatoon/ironcc.git?rev=f3a9f3a#f3a9f3a2676b6ee6140999254f34055ca935491c"
 
 [[package]]
 name = "ironcc-wasm"

@@ -10,4 +10,4 @@ crate-type = ["cdylib"]
 
 [dependencies]
 wasm-bindgen = "0.2.78"
-ironcc = {git = "https://github.com/lemolatoon/ironcc.git", branch = "develop"}
+ironcc = {git = "https://github.com/lemolatoon/ironcc.git", rev="f3a9f3a"}
